@@ -26,12 +26,13 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
+          path D:\a\wenrlight\wenrlight\nosgestesclimat-site-master/package.json
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .nosgestesclimat-site-master
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
